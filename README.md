@@ -1,36 +1,35 @@
 # CI2025_lab2 - Travelling Salesman Problem
 
-### Genetic Algorithm results:
+### Genetic Algorithm results (population=100, generations=1000)
 
-- turnament selection
+- tournament selection ($\tau = 5$)
 - order-based crossover 
-- swap mutation
+- swap mutation ($p = \frac{1}{genome size}$)
 
-| Problem file | Best distance | Average distance | Runtime (s) | Notes |
-|---|---:|---:|---:|---:|
-| problem_g_10 | 1497 | TBD | 00:07 | |
-| problem_g_20 | TBD | TBD | TBD | |
-| problem_g_50 | 2936 | TBD | 00:22 | |
-| problem_g_100 | 6097 | TBD | 00:42 | |
-| problem_g_200 | 14804 | TBD | 01:41 | |
-| problem_g_500 | 46833 | / | 07:59 | single run |
-| problem_g_1000 | 111060 | / | 28:50 | single run |
-| problem_r1_10 | 184 | TBD | 00:07 | |
-| problem_r1_20 | TBD | TBD | TBD | |
-| problem_r1_50 | 670 | TBD | 00:23 | |
-| problem_r1_100 | 1215 | TBD | 00:42 | |
-| problem_r1_200 | 2867 | TBD | 01:42 | |
-| problem_r1_500 | 9218 | / | 07:53 | single run |
-| problem_r1_1000 | 21223 | / | 28:42 | single run |
-| problem_r2_10 | -411 | TBD | 00:07 | |
-| problem_r2_20 | TBD | TBD | TBD | |
-| problem_r2_50 | -2156 | TBD | 00:23 | |
-| problem_r2_100 | -4197 | TBD | 00:41 | |
-| problem_r2_200 | -7841 | TBD | 01:41 | |
-| problem_r2_500 | -18573 | / | 07:58 | single run |
-| problem_r2_1000 | -34542 | / | 28:41 | single run |
+| Problem name    | Best distance | Average distance | Runtime (s) |      Notes |
+| --------------- | ------------: | ---------------: | ----------: | ---------: |
+| problem_g_10    |     1497.6636 |        1497.6636 |        3.46 |            |
+| problem_g_20    |     1755.5147 |        1788.3416 |        5.53 |            |
+| problem_g_50    |     2852.1778 |        3020.7105 |       13.68 |            |
+| problem_g_100   |     5386.7016 |        5870.2513 |       32.94 |            |
+| problem_g_200   |    13680.8010 |       14448.8698 |       91.67 |            |
+| problem_g_500   |         46833 |                / |         479 | single run |
+| problem_g_1000  |        111060 |                / |        1730 | single run |
+| problem_r1_10   |      184.2734 |         184.2734 |        3.45 |            |
+| problem_r1_20   |      340.8621 |         346.2260 |        5.57 |            |
+| problem_r1_50   |      604.4144 |         650.8863 |       13.66 |            |
+| problem_r1_100  |     1132.3645 |        1199.3823 |       32.95 |            |
+| problem_r1_200  |     2867.8982 |        2816.1037 |       91.89 |            |
+| problem_r1_500  |          9218 |                / |         473 | single run |
+| problem_r1_1000 |         21223 |                / |        1722 | single run |
+| problem_r2_10   |     -411.7017 |        -411.7017 |        3.42 |            |
+| problem_r2_20   |     -858.6408 |        -839.9048 |        5.48 |            |
+| problem_r2_50   |    -2203.2104 |       -2164.5329 |       13.50 |            |
+| problem_r2_100  |    -4345.1764 |       -4260.0590 |       32.48 |            |
+| problem_r2_200  |    -7841.7098 |       -8149.4002 |       91.80 |            |
+| problem_r2_500  |        -18573 |                / |         478 | single run |
+| problem_r2_1000 |        -34542 |                / |        1721 | single run |
 
 Notes:
-- Best distance: shortest path length found by the GA run (single run or best of several runs).
-- Average: mean across 10 runs.
-
+- Best distance: shortest tour length found among the runs.
+- Average distance: mean over 10 runs.
